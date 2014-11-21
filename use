@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+[ -f ~/.vimrc ] &&  [ ! -L ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.bak
+[ -d ~/.vim ]   &&  [ ! -L ~/.vimrc ] && mv ~/.vim ~/.vim.bak
+
+ln -sf $DIR/vimrc ~/.vimrc
+ln -sf $DIR/vim ~/.vim
+
+echo "Links configured, run vim!"
