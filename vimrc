@@ -21,6 +21,7 @@ set tabstop=2
 set expandtab
 set nrformats=           " Treat all numerals as decimal if contain leading 0's (def: octal for leading 0's)
 set pastetoggle=<F2>
+set history=200
 "set textwidth=80
 
 filetype on
