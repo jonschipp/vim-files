@@ -69,3 +69,10 @@ cnoremap sudow w !sudo tee % >/dev/null
 nnoremap  ;  :
 nnoremap  :  ;
 inoremap jj <Esc>
+"GNU Screen-like bindings
+map <C-a>c <C-w>s
+map <C-a>x <C-w>c
+map <C-a>n <C-w>l
+map <C-a>p <C-w>h
+map <C-a>j <C-w>j
+map <C-a>k <C-w>k
