@@ -60,6 +60,7 @@ endif
 nnoremap <S-tab> :tabprevious<CR>
 nnoremap <tab>   :tabnext<CR>
 nnoremap <C-t>     :tabnew<CR>
+nnoremap <C-m>     :tabmove
 
 " http://www.catonmat.net/blog/sudo-vim/
 cnoremap sudow w !sudo tee % >/dev/null
