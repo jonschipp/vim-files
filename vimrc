@@ -14,6 +14,7 @@ set noswapfile
 set nowrap       		     "Don't wrap lines
 set linebreak    		     "Wrap lines at convenient points
 set ignorecase
+set smartcase
 set autoindent
 set smartindent
 set smarttab
