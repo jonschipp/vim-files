@@ -13,6 +13,8 @@ set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ " Show “invisible” characters
 set noswapfile
 set nowrap       		     "Don't wrap lines
 set linebreak    		     "Wrap lines at convenient points
+set complete+=i,k
+set omnifunc=syntaxcomplete#Complete
 set ignorecase
 set smartcase
 set autoindent
@@ -25,22 +27,26 @@ set expandtab
 set nrformats=           " Treat all numerals as decimal if contain leading 0's (def: octal for leading 0's)
 set pastetoggle=<F2>
 set history=200
+"set spell
 "set textwidth=80
 
-filetype on
-filetype plugin on
-runtime macros/matchit.vim
-filetype indent on
-filetype on
-au BufNewFile,BufRead *.bro set filetype=perl
-syntax on
 colorscheme solarized
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+autocmd BufNewFile,BufRead *.bro set filetype=perl
+runtime macros/matchit.vim
+
+" if has("autocmd")
+"   filetype on
+"   autocmd FileType *.tex compiler pdflatex
+" endif
 
 " Highlight trailing whitespaces
 let c_space_errors=1
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
-
 
 "As of Mac OS X Lion 10.7, Terminal supports “bracketed paste mode,”
 "which enables the terminal emulator to tell the program connected
