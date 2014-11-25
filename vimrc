@@ -13,6 +13,7 @@ set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ " Show “invisible” characters
 set noswapfile
 set nowrap       		     "Don't wrap lines
 set linebreak    		     "Wrap lines at convenient points
+set ignorecase
 set autoindent
 set smartindent
 set smarttab
