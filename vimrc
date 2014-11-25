@@ -72,6 +72,9 @@ cnoremap sudow w !sudo tee % >/dev/null
 nnoremap  ;  :
 nnoremap  :  ;
 inoremap jj <Esc>
+"Accept flags from last substitution
+nnoremap & ;&&<CR>
+xnoremap & ;&&<CR>
 "GNU Screen-like bindings
 map <C-a>c <C-w>s
 map <C-a>x <C-w>c
