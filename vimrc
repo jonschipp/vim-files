@@ -27,6 +27,7 @@ set history=200
 
 filetype on
 filetype plugin on
+runtime macros/matchit.vim
 filetype indent on
 filetype on
 au BufNewFile,BufRead *.bro set filetype=perl
