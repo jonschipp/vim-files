@@ -75,6 +75,8 @@ inoremap jj <Esc>
 "Accept flags from last substitution
 nnoremap & ;&&<CR>
 xnoremap & ;&&<CR>
+"Mute search highlighting with <C-l>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "GNU Screen-like bindings
 map <C-a>c <C-w>s
 map <C-a>x <C-w>c
