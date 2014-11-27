@@ -81,6 +81,11 @@ inoremap jj <Esc>
 "Accept flags from last substitution
 nnoremap & ;&&<CR>
 xnoremap & ;&&<CR>
+"Switch word move keys
+nnoremap w W
+nnoremap W w
+nnoremap b B
+nnoremap B b
 "Mute search highlighting with <C-l>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "GNU Screen-like bindings
