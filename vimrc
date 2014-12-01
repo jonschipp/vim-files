@@ -22,11 +22,11 @@ set smartindent
 set smarttab
 set shiftwidth=2
 set softtabstop=2
-set tabstop=2
 set expandtab
 set nrformats=           " Treat all numerals as decimal if contain leading 0's (def: octal for leading 0's)
 set pastetoggle=<F2>
 set history=200
+"set tabstop=2
 "set spell
 "set textwidth=80
 
