@@ -95,3 +95,9 @@ map <C-a>n <C-w>l
 map <C-a>p <C-w>h
 map <C-a>j <C-w>j
 map <C-a>k <C-w>k
+
+"yal or yil to yank to end of line for easier pasting
+:vnoremap <silent> al :<c-u>norm!0v$h<cr>
+:vnoremap <silent> il :<c-u>norm!^vg_<cr>
+:onoremap <silent> al :norm val<cr>
+:onoremap <silent> il :norm vil<cr>
