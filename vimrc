@@ -8,7 +8,7 @@ set cursorline
 set number
 set hlsearch
 set wrap
-set t_ti= t_te=
+set t_ti= t_te=         "do not to restore the screen after exit
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ " Show “invisible” characters
 set noswapfile
 set nowrap       		     "Don't wrap lines
