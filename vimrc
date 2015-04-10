@@ -79,8 +79,8 @@ nnoremap  ;  :
 nnoremap  :  ;
 inoremap jj <Esc>
 "Accept flags from last substitution
-nnoremap & ;&&<CR>
-xnoremap & ;&&<CR>
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
 "Switch word move keys
 nnoremap w W
 nnoremap W w
