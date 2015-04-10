@@ -36,6 +36,8 @@ filetype on
 filetype indent on
 filetype plugin on
 autocmd BufNewFile,BufRead *.bro set filetype=perl
+au BufRead,BufNewFile *.md,*.txt,*.tex setlocal textwidth=80
+
 runtime macros/matchit.vim
 
 " if has("autocmd")
