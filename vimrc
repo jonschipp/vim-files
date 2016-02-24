@@ -8,8 +8,9 @@ set cursorline
 set number
 set hlsearch
 set wrap
+set binary
 set t_ti= t_te=         "do not to restore the screen after exit
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ " Show “invisible” characters
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ " Show “invisible” characters
 set noswapfile
 set nowrap       		     "Don't wrap lines
 set linebreak    		     "Wrap lines at convenient points
@@ -36,7 +37,7 @@ filetype on
 filetype indent on
 filetype plugin on
 autocmd BufNewFile,BufRead *.bro set filetype=perl
-au BufRead,BufNewFile *.md,*.txt,*.tex setlocal textwidth=80
+au BufRead,BufNewFile *.md,*.txt,*.tex setlocal textwidth=120
 
 runtime macros/matchit.vim
 
