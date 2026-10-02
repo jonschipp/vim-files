@@ -5,6 +5,7 @@ set laststatus=2
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
 set showmode            "Show what mode you're in
 set cursorline
+set cursorcolumn
 set number
 set hlsearch
 set wrap
@@ -50,6 +51,15 @@ runtime macros/matchit.vim
 let c_space_errors=1
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
+
+"highlight nonascii guibg=Red ctermbg=1 term=standout
+"au BufReadPost * syntax match nonascii "[^\u0000-\u007F]"
+"
+" Highlight non-ascii characters
+syntax match nonascii "[^\x00-\x7F]"
+" ctermbg=1 is solarized red; ctermbg=2 was solarized green, which read as
+" ordinary syntax highlighting rather than as a warning
+highlight nonascii guibg=Red ctermbg=1
 
 " As of Mac OS X Lion 10.7, Terminal supports “bracketed paste mode,”
 " which enables the terminal emulator to tell the program connected
