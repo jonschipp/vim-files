@@ -31,6 +31,10 @@ set history=200
 "set spell
 "set textwidth=80
 
+" Truecolor: solarized uses its exact hex palette instead of the terminal's ANSI 16
+if has('termguicolors')
+  set termguicolors
+endif
 colorscheme solarized
 syntax on
 filetype on
