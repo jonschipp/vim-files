@@ -8,3 +8,4 @@ Jon's Vim config. `~/.vimrc` -> `vimrc` and `~/.vim` -> `vim/` (symlinks into th
 - `vim/vim` is a stray symlink to an old absolute path; don't commit it.
 - Remote is GitHub `jonschipp/vim-files`; default branch `master`.
 - Gotcha: inside the Claude sandbox, `git push` and `git worktree remove` need the sandbox disabled.
+- Solarized is patched (3 `has("gui_running")` checks also accept `&termguicolors`) in both `vim/colors/solarized.vim` and the bundle copy; the stock plugin ignores truecolor in a terminal. Re-apply if the plugin is updated. `~/.vim/colors` wins over the bundle on the runtimepath.
